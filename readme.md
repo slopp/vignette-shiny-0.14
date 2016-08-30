@@ -9,15 +9,17 @@ Shiny 0.14 release to CRAN is planned to be complete and blogged by **Sept 2, 20
 
 > Some updates described in Bookmarkable State will not work with SSP or RSC. Updates to SSP are planned in 3 releases over the next 2 months: Security Update (no user impact), Parity with OS SS (full support for bookmarkable state), Node.js update (no user impact)
 
+The primary new features are:
+
 -   [Bookmarkable State](#bookmarkable-state)
 -   [Databases](#databases)
 -   [Modals](#modals)
 -   [Progress Bars / Notifications](#progress-bars-notifications)
 -   [insertUI / removeUI](#insertui-removeui)
 
-Many, many other minor additions that will be life savers. For instance, Shiny now prints helpful messages if an error is caused by a missing paranthesis, bracket, etc. You can also update the appearance of an action button dynamically,
+In addition, there are many minor additions that will be valuable to users. For instance, Shiny now prints helpful messages if an error is caused by a missing paranthesis, bracket, etc. Another example, you can update the appearance of an action button dynamically (without using ShinyJS).
 
-Full news to share with clients: <https://github.com/rstudio/shiny/blob/master/NEWS.md>
+A full list of features and changes: <https://github.com/rstudio/shiny/blob/master/NEWS.md>
 
 Bookmarkable State
 ------------------
@@ -26,7 +28,7 @@ Bookmarkable State
 
 Bookmarkable State allows a user to save a particular view of an application. The inputs will be caputured when the user clicks bookmark and a custom url will be generated. The url will either embed the inputs or will point to hidden file saved automatically on the server. (**This feature is not yet available in Shiny Server Pro or RStudio Connect**).
 
-When the user enters the supplied url the app will be initialized with the given inputs. There are some caveats (if the state of your app is not completely defined by the inputs) as well as many ways to customize the save and restore functionality.
+When the user enters the supplied url the app will be initialized with the given inputs. There are some caveats, if the state of your app is not completely defined by the inputs bookmarking won't work. Users can also customize the save and restore functionality.
 
 The power of bookmarkable state *compared to shinyURL* is that you can save much more complicated states.
 
@@ -58,4 +60,4 @@ insertUI / removeUI
 
 [Addition to Dynamic UI Article](http://shiny.rstudio-staging.com/articles/dynamic-ui.html)
 
-insertUI and removeUI allows users to dynamically generate multiple UI elements (as opposed to renderUI which is always linked to 1 UI element.) insertUI and removeUI can be used when you want to generate conditional lists (ie maps of every city in a county). Used in conjunction with modules they allow users to create complex apps.
+insertUI and removeUI allow users to dynamically generate multiple UI elements (as opposed to renderUI which is always linked to 1 UI element.) insertUI and removeUI can be used when you want to generate conditional user inputs (ie checkboxes for all files in a folder). Used in conjunction with modules they allow users to create complex apps.
