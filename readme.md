@@ -3,7 +3,7 @@ Shiny 0.14 Updates
 
 The primary goal of this vignette is so CS / Sales can answer the question, "Whats new with Shiny" or demo the new concepts to further driver customer engagement. None of the updates are specifically Pro features.
 
-Shiny 0.14 release to CRAN is planned to be complete and blogged by **Sept 2, 2016**. Until then, the documentation described below will be accessible at the [Shiny Staging Site](https://shiny.rstudio-staging.com/articles). The staging url should be shared with customers. Prior to the CRAN release you will also need to install Shiny from Github.
+Shiny 0.14 release to CRAN is planned to be complete and blogged by **Sept 2, 2016**. Until then, the documentation described below will be accessible at the [Shiny Staging Site](https://shiny.rstudio-staging.com/articles). The staging url should *not* be shared with customers. Prior to the CRAN release you will also need to install Shiny from Github.
 
 `devtools::install_github("rstudio/shiny")`
 
