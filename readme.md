@@ -46,14 +46,14 @@ Modals
 
 [Article](http://shiny.rstudio-staging.com/articles/modal-dialogs.html)
 
-Modals allow users to create pop-ups that contain instructions, messages, etc. These popups can be triggered off an observeEvent, or they could be used to display messages when the user first opens an app (ie, be sure to attend the RStudio presentation on Monday.)
+Modals allow users to create pop-ups that contain instructions, messages, etc. These popups can be triggered off an observeEvent, or they could be used to display messages when the user first opens an app (ie, be sure to attend the RStudio presentation on Monday.) Modals can include arbitrary code elements as well, ie action buttons. 
 
 Progress Bars / Notifications
 -----------------------------
 
 [Article](http://shiny.rstudio-staging.com/articles/progress.html)
 
-Progress bars have been in Shiny for a longtime. Shiny 0.14 changes how progress bars work behind the scenes which in turn changes their appearance. There is also a new option to display notifications. Notifications are similar to modals, but by default disappear after a certain amount of time.
+Progress bars have been in Shiny for a longtime. Shiny 0.14 changes how progress bars work behind the scenes which in turn changes their appearance. There is also a new option to display notifications. Notifications present messages to users and are transient (by default they disappear after 5 seconds).
 
 insertUI / removeUI
 -------------------
